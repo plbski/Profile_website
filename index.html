@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pierre-loïc Buet — Étudiant Dev</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">PLB</div>
+    <ul class="nav-links">
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-tag">// Étudiant · Développeur · Sportif</div>
+    <h1>Pierre-loïc<br /><span>Buet</span></h1>
+    <p class="hero-desc">
+      Étudiant en informatique et sportif, passionné par les problèmes et les défis. J'apprends en construisant, en cassant, en recommençant — peut importe la tâche donnée.
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+      <a href="cv.pdf" download="CV-Pierre-loic-Buet.pdf" class="btn btn-outline">Télécharger CV</a> <!-- 🔧 Mets ton PDF dans le même dossier -->
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-header reveal">
+      <span class="section-num">01.</span>
+      <h2>À propos</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          Étudiant en <strong>informatique</strong> à l'école 42.
+          Je m'intéresse particulièrement aux algorithmes graphiques, à la programmation
+          système et aux mathématiques appliquées.
+        </p>
+        <p>
+          En dehors des cours, je cherche constamment à me dépasser
+		— aussi bien sur le terrain que derrière un écran. En sport, 
+		je me tourne vers la compétition sous toutes ses formes, là 
+		où la pression révèle ce qu'on est vraiment. Dans le digital, 
+		j'ai récemment découvert les CTF : une façon de mettre mes compétences 
+		à l'épreuve sur des défis concrets. Je participerais à ma première compétition le 20 mars 2026.
+        </p>
+        <p>
+          Actuellement à la recherche d'un <strong>stage / alternance</strong> pour une durée de <!-- 🔧 --> mois à partir de septembre.
+        </p>
+      </div>
+      <div class="reveal">
+        <p style="font-size:0.75rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--accent); margin-bottom:1rem;">Stack &amp; Compétences</p>
+        <div class="skills-grid">
+          <span class="skill-tag highlight">C</span>
+          <span class="skill-tag highlight">C++</span>
+          <span class="skill-tag">Algorithmes</span>
+          <span class="skill-tag">Maths</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">Linux</span>
+          <span class="skill-tag">Makefile</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-header reveal">
+      <span class="section-num">02.</span>
+      <h2>Projets</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid">
+
+      <!-- PROJET 1 — Fractales -->
+<a href="https://github.com/plbski/fract-ol" class="project-card reveal" target="_blank" rel="noopener noreferrer">
+  <div class="project-preview preview-fractal">
+
+    <!-- Texte positionné en bas de l'image -->
+    <div class="preview-overlay">
+      <div class="project-tags">
+        <span class="project-tag">C</span>
+      </div>
+      <h3>Fractale</h3>
+      <p class="project-desc">Rendu graphique de fractales avec zoom infini</p>
+    </div>
+  </div>
+</a>
+
+      <!-- PROJET 2 — Mini-jeu -->
+<a href="https://github.com/plbski/minshell/tree/LAST_LAST" class="project-card reveal" target="_blank" rel="noopener noreferrer">
+  <div class="project-preview preview-minishell">
+    <div class="preview-overlay">
+      <div class="project-tags">
+        <span class="project-tag">C</span>
+        <span class="project-tag">Bash</span>
+      </div>
+      <h3>Minishell</h3>
+      <p class="project-desc">Implémentation d'un shell Unix minimaliste en C.</p>
+    </div>
+  </div>
+</a>
+
+      <!-- PROJET 3 -->
+<a href="https://github.com/thewinterman/webserv" class="project-card reveal" target="_blank" rel="noopener noreferrer">
+  <div class="project-preview preview-webserv">
+    <div class="preview-overlay">
+      <div class="project-tags">
+        <span class="project-tag">CPP</span>
+        <span class="project-tag">Bash</span>
+      </div>
+      <h3>Webserv</h3>
+      <p class="project-desc">Implémentation d'un serveur avec protocole http1.1 minimaliste</p>
+    </div>
+  </div>
+</a>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-header reveal" style="justify-content:center;">
+      <span class="section-num">03.</span>
+      <h2>Contact</h2>
+    </div>
+    <div class="contact-inner reveal">
+      <p>
+        Disponible pour un <strong>stage</strong>, une <strong>alternance</strong> ou juste une discussion sur un projet cool.
+        N'hésite pas à m'écrire.
+      </p>
+      <a href="mailto:pl.buet@icloud.com" class="btn btn-primary">pl.buet@icloud.com</a> <!-- 🔧 -->
+      <div class="contact-links">
+        <a href="https://github.com/plbski" class="contact-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/tonprofil" class="contact-link" target="_blank" rel="noopener noreferrer">LinkedIn</a> <!-- 🔧 -->
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2025 Pierre-loïc Buet</span>
+    <span style="color:var(--border);">Fait à la main avec curiosité</span>
+  </footer>
+
+  <script>
+    // Custom cursor
+    const cursor = document.getElementById('cursor');
+    const ring = document.getElementById('cursorRing');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+    document.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      cursor.style.left = mx - 5 + 'px';
+      cursor.style.top  = my - 5 + 'px';
+    });
+    (function animRing() {
+      rx += (mx - rx) * 0.12;
+      ry += (my - ry) * 0.12;
+      ring.style.left = rx - 18 + 'px';
+      ring.style.top  = ry - 18 + 'px';
+      requestAnimationFrame(animRing);
+    })();
+    document.querySelectorAll('a, button').forEach(el => {
+      el.addEventListener('mouseenter', () => cursor.style.transform = 'scale(2.5)');
+      el.addEventListener('mouseleave', () => cursor.style.transform = 'scale(1)');
+    });
+
+    // Click ripple
+    document.addEventListener('click', e => {
+      [false, true].forEach(isSecond => {
+        const ripple = document.createElement('div');
+        ripple.className = 'click-ripple' + (isSecond ? ' second' : '');
+        ripple.style.left = e.clientX + 'px';
+        ripple.style.top  = e.clientY + 'px';
+        document.body.appendChild(ripple);
+        ripple.addEventListener('animationend', () => ripple.remove());
+      });
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
